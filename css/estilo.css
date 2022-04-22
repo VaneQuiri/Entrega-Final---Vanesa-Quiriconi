@@ -134,7 +134,7 @@ main .mi .somos .texto1 {
 }
 
 main .porque {
-  background-image: url(/Image/balanza.jpg);
+  background-image: url(./Image/balanza.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
