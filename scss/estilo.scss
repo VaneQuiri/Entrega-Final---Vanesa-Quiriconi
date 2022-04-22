@@ -103,7 +103,7 @@ main{
         }
     }   
     .porque {
-        background-image: url(./Image/balanza.jpg);
+        background-image: url(/image/balanza.jpg);
         display: flex;
         margin: auto;
         flex-direction: column;
@@ -262,54 +262,47 @@ footer{
 }
 
 /*   ERROR 404   */
-body{
-    background-color: #464660;;
+.falla{
+    background-color: #464660;
     background-size: cover;
-
     .error{
-        background-color: #464660;;
-        background-size: cover;
-        display: grid;
-        grid-template-columns:(1fr 1fr) ;
-        grid-template-rows: (1fr 1fr 1fr 1fr);
-        grid-template-areas: 
-        "h1 img"
-        "tex1 img"
-        "tex2 img"
-        "enlase enlase";
+        background-color: #464660;
         h1{
             color: #368B85;
-            font-size: 40px;
-            padding: 80px 0px 0px 180px;
-            grid-area: h1;
             font-family: 'Roboto Serif', serif;
+            margin-top: 30px; 
+            text-align: center;
         }
-        img{
-            width: 60%;
-            grid-area: img;
-            padding: 80px 50px 10px 10px;
-            animation-duration: 3s;
-        }  
-        .tex1{
-            color: $ct-beige;
-            font-size: medium;
-            grid-area: tex1;
-            padding: 0px 0px 10px 180px;
+        .cont-error{
+            display: flex;
+            flex-direction: row;
+            .error-textos{
+                margin: auto;
+                .tex1{
+                    color: $ct-beige;
+                    margin: 10px auto;
+                    font-size: medium;
+                }
+                .tex2{
+                    color: $ct-beige;
+                    margin: 10px auto;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: large;
+                }
+                .enlase{
+                    color: #B4B897;
+                    margin:30px auto;
+                    font-family: 'Roboto Serif', serif;
+                    animation-duration: 3s;
+                }
+            }
+            .imgerror{
+                text-align: start;
+                margin: auto;
+                padding: 10px;
+                width: 30%;
+                animation-duration: 3s;
+            }
         }
-        .tex2{
-            color: $ct-beige;
-            font-size: large;
-            grid-area: tex2;
-            padding: 5px 0px 10px 180px;
-            font-family: 'Roboto', sans-serif;
-        }
-        .enlase{
-            color: #B4B897;
-            margin: auto;
-            grid-area: enlase;
-            margin-top: -10px;
-            font-family: 'Roboto Serif', serif;
-            animation-duration: 3s;
-        }
-    } 
-} 
+    }
+}
